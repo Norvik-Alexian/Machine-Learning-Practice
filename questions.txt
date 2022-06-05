@@ -1,0 +1,62 @@
+* more investigation on 'reshape'
+    The numpy.reshape() function is used to reshape a numpy array without changing the data in the array.
+    It is a very common practice to reshape arrays to make them compatible for further calculations.
+
+* more investigation on model.coef_ and model.intercept_
+    model.coef_: Estimated coefficients for the linear regression problem.
+        If multiple targets are passed during the fit (y 2D), this is a 2D array of shape (n_targets, n_features),
+        while if only one target is passed, this is a 1D array of length n_features.
+    model.intercept_: Independent term in the linear model. Set to 0.0 if fit_intercept = False.
+
+* more investigation on np.genfromtxt
+    Load data from a text file, with missing values handled as specified.
+
+* more investigation on apply() function of pandas.
+    Apply a function along an axis of the DataFrame.
+
+* more investigation on LabelEncoder
+    Encode target labels with value between 0 and n_classes-1.
+
+* more investigation on GaussianNB
+    Gaussian Naive Bayes supports continuous valued features and models each as conforming to a Gaussian (normal) distribution.
+
+* more investigation on fit_transform
+    This fit_transform() method is basically the combination of fit method and transform method,
+    it is equivalent to fit().transform(). This method performs fit and transform on the input data at a single time
+    and converts the data points.
+
+* more investigation on figure matplotlib and add_subplot
+    This class is the top level container for all the plot elements.
+    The Figure instance supports callbacks through a callbacks attribute which is a CallbackRegistry instance.
+
+    Subplots mean groups of axes that can exist in a single matplotlib figure.
+
+* more investigation on kernal attribute of model instances
+    kernel{‘linear’, ‘poly’, ‘rbf’, ‘sigmoid’, ‘precomputed’} or callable, default=’rbf’
+    Specifies the kernel type to be used in the algorithm. If none is given, ‘rbf’ will be used.
+    If a callable is given it is used to pre-compute the kernel matrix from data matrices;
+    that matrix should be an array of shape (n_samples, n_samples).
+
+* more investigation on stratify on train_test_split
+    stratification means that the train_test_split method returns training and test subsets that have
+    the same proportions of class labels as the input dataset.
+
+* more investigation on max_depth and criterion of DecisionTreeClassifier Model
+    criterion: This parameter determines how the impurity of a split will be measured.
+        The default value is “gini” but you can also use “entropy” as a metric for impurity.
+
+    max_depth: This determines the maximum depth of the tree.
+
+* more investiagtion on factorize() function of pandas
+    factorize() function encode the object as an enumerated type or categorical variable.
+
+* more investigation on n_estimators of RandomForest model.
+    n_estimators : This is the number of trees you want to build before taking the maximum voting or averages of predictions.
+
+* more investigation on Series() function of pandas
+    A pandas Series is a one-dimensional labelled data structure which can hold data such as strings, integers and even other Python objects.
+    It is built on top of numpy array and is the primary data structure to hold one-dimensional data in pandas.
+
+* more investigation on concat() function of pandas
+* more investigation on cross_val and KFold Models
+* more investigation on GridSearchCV models
